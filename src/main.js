@@ -24,11 +24,11 @@ Vue.component('navbar', Navbar);
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  // el: '#app',
   store,
   router,
   template: '<App/>',
   components: {
     App,
   },
-});
+}).$mount('#app');
