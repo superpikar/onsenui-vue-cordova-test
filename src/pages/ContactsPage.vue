@@ -109,7 +109,7 @@ export default {
       if (navigator.contacts) {
         navigator.contacts.pickContact((contact) => {
           console.log('The following contact has been selected:');
-          
+
           const selectedContact = Object.assign(contact, {
             showDetail: false,
           });

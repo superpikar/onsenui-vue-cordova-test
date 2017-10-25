@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import ContactsPage from './pages/ContactsPage';
 
 export default new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes: [{
     path: '/',
     component: HomePage,
