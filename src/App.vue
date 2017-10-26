@@ -1,7 +1,7 @@
 <template>
   <v-ons-page id="app">
     <v-ons-splitter>
-      <v-ons-splitter-side swipeable collapse width="250px"
+      <v-ons-splitter-side collapse width="250px"
         :animation="$ons.platform.isAndroid() ? 'overlay' : 'reveal'"
         :open.sync="menuIsOpen">
         <sidebar-menu></sidebar-menu>

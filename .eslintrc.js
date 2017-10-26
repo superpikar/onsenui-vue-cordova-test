@@ -35,6 +35,9 @@ module.exports = {
     }],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // allow console.log
     'no-console': 0,
+    // allow maximum line more than 100
+    'max-len': 0,
   }
 }

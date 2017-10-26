@@ -7,6 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     menuIsOpen: false,
+    findContactsLength: 0,
+    pickContactsLength: 0,
   },
   mutations: {
     toggleMenu(state, isToggle) {
@@ -15,6 +17,12 @@ export default new Vuex.Store({
       } else {
         state.menuIsOpen = !state.menuIsOpen;
       }
+    },
+    setFindContactsLength(state, length) {
+      state.findContactsLength = length;
+    },
+    setPickContactsLength(state, length) {
+      state.pickContactsLength = length;
     },
   },
 });
