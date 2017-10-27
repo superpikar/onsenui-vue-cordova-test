@@ -21,7 +21,9 @@
         "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-contacts": "^2.3.1",
         "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-sms-plugin": "^0.1.11",
         "onsenui": "~2.6.1",
+        "randomcolor": "^0.5.3",
         "vue": "^2.5.0",
         "vue-onsenui": "~2.2.1",
         "vue-router": "^3.0.1",
@@ -84,7 +86,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-contacts": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-sms-plugin": {}
         },
         "platforms": [
             "android",

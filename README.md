@@ -31,4 +31,15 @@ cordova run android
 cordova build android
 ```
 
+## Screenshots
+
+Home Page <br/>
+<img src="screenshots/output/screenshot1.png" />
+<br/>
+Contact Page <br/>
+<img src="screenshots/output/screenshot2.png" />
+<img src="screenshots/output/screenshot3.png" />
+<img src="screenshots/output/screenshot4.png" />
+<img src="screenshots/output/screenshot5.png" />
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

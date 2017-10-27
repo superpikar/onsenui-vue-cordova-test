@@ -18,7 +18,7 @@
             <div class="info">no contact yet!</div>
           </div>
         </v-ons-list-item>
-        <v-ons-list-item v-for='(item, key) in contacts' :key='key'>
+        <v-ons-list-item v-for='(item, key) in contacts' :key='key' modifier="longdivider">
           <contact-item :item="item"></contact-item>
         </v-ons-list-item>
       </v-ons-list>

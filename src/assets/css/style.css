@@ -1,3 +1,15 @@
 .main-content {
   padding: 20px;
 }
+
+.list-item--material.list-item--longdivider {
+  border-bottom: 1px solid #eee;
+}
+
+ons-toolbar.home-toolbar.toolbar.toolbar--material {
+  background: #313131;
+}
+
+.tabbar--material {
+  background-color: #313131;
+}

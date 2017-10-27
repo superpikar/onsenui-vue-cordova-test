@@ -14,7 +14,7 @@
             <div class="info">no contact yet!</div>
           </div>
         </v-ons-list-item>
-        <v-ons-list-item v-for='(item, key) in contacts' :key='key'>
+        <v-ons-list-item tappable v-for='(item, key) in contacts' :key='key'>
           <contact-item :item="item"></contact-item>
         </v-ons-list-item>
       </v-ons-list>

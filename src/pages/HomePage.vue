@@ -1,12 +1,27 @@
+<style>
+.content.card__content {
+  text-align: left;
+  height: 75px;
+}
+.content.card__content a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background: rgba(0,0,0,.5);
+  padding: 5px;
+}
+.card {
+  background-position: center;
+}
+</style>
+
+
 <template>
   <v-ons-page>
     <navbar></navbar>
     <div class="main-content">
-      <div class="header">
-        <img src="../assets/logo.png">
-      </div>
-      <v-ons-card v-for="item in menus" :key="item.path">
-        <div class="title">
+      <v-ons-card v-for="(item, key) in menus" :key="item.path" :style="`background-image: url(${item.background});`">
+        <div class="content">
           <router-link :to="item.path">
             {{item.title}}
           </router-link>
@@ -17,6 +32,7 @@
 </template>
 
 <script>
+import randomColor from 'randomcolor';
 import Menu from '../menu';
 
 const homeMenu = Menu.sidebarMenu.filter(val => val.path !== '/');
@@ -25,6 +41,7 @@ export default {
   data() {
     return {
       menus: homeMenu,
+      colors: randomColor({ hue: 'green', count: 10 }),
     };
   },
   methods: {
