@@ -34,12 +34,12 @@ cordova build android
 ## Screenshots
 
 Home Page <br/>
-<img src="screenshots/output/screenshot1.png" />
+<img src="screenshots/output/screenshot1.png" style="border: 1px solid #eaeaea; margin: 5px 5px 5px 0;" />
 <br/>
 Contact Page <br/>
-<img src="screenshots/output/screenshot2.png" />
-<img src="screenshots/output/screenshot3.png" />
-<img src="screenshots/output/screenshot4.png" />
-<img src="screenshots/output/screenshot5.png" />
+<img src="screenshots/output/screenshot2.png" style="border: 1px solid #eaeaea; margin: 5px 5px 5px 0;" />
+<img src="screenshots/output/screenshot3.png" style="border: 1px solid #eaeaea; margin: 5px 5px 5px 0;" />
+<img src="screenshots/output/screenshot4.png" style="border: 1px solid #eaeaea; margin: 5px 5px 5px 0;" />
+<img src="screenshots/output/screenshot5.png" style="border: 1px solid #eaeaea; margin: 5px 5px 5px 0;" />
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
