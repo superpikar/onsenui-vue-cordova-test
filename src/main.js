@@ -11,6 +11,7 @@ import App from './App';
 import store from './store';
 import router from './router';
 import Navbar from './components/Navbar';
+import './filter';
 
 import './assets/css/style.css';
 

@@ -54,7 +54,9 @@ export default {
     },
     sendSms(item) {
       /* eslint-disable no-undef */
-      if (sms) {
+      if (typeof sms === 'undefined') {
+        this.$ons.notification.alert('Can\'t send on mobile web');
+      } else {
         const message = Helper.setSmsText(item.displayName);
         const number = Helper.getFirstPhoneNumber(item.phoneNumbers);
         const options = {
@@ -74,8 +76,6 @@ export default {
         } else {
           this.$ons.notification.alert('This contact doesn\'t have phone number');
         }
-      } else {
-        this.$ons.notification.alert('Can\'t send on mobile web');
       }
     },
   },

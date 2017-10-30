@@ -15,7 +15,6 @@
 }
 </style>
 
-
 <template>
   <v-ons-page>
     <navbar></navbar>

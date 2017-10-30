@@ -18,6 +18,7 @@
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
+        "cordova-plugin-ble-central": "^1.1.4",
         "cordova-plugin-compat": "^1.0.0",
         "cordova-plugin-contacts": "^2.3.1",
         "cordova-plugin-whitelist": "^1.3.2",
@@ -87,7 +88,8 @@
         "plugins": {
             "cordova-plugin-contacts": {},
             "cordova-plugin-whitelist": {},
-            "cordova-sms-plugin": {}
+            "cordova-sms-plugin": {},
+            "cordova-plugin-ble-central": {}
         },
         "platforms": [
             "android",
