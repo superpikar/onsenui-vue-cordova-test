@@ -1,7 +1,11 @@
 <template>
   <v-ons-toolbar class="home-toolbar">
     <div class="left">
-      <v-ons-toolbar-button @click="toggleMenu">
+      <v-ons-toolbar-button @click="goBack" v-if="enableBack">
+        <v-ons-icon icon="ion-arrow-left-c"></v-ons-icon>
+      </v-ons-toolbar-button>
+      
+      <v-ons-toolbar-button @click="toggleMenu" v-if="!enableBack">
         <v-ons-icon icon="ion-navicon, material:md-menu"></v-ons-icon>
       </v-ons-toolbar-button>
     </div>
@@ -11,9 +15,18 @@
 
 <script>
   export default {
+    props: {
+      enableBack: {
+        type: Boolean,
+        default: false,
+      },
+    },
     methods: {
       toggleMenu() {
         this.$store.commit('toggleMenu', true);
+      },
+      goBack() {
+        this.$router.back();
       },
     },
   };

@@ -2,8 +2,9 @@
 .content.card__content {
   text-align: left;
   height: 75px;
+  color: white;
 }
-.content.card__content a {
+.content.card__content span {
   font-size: 20px;
   color: white;
   text-decoration: none;
@@ -19,13 +20,13 @@
   <v-ons-page>
     <navbar></navbar>
     <div class="main-content">
-      <v-ons-card v-for="(item, key) in menus" :key="item.path" :style="`background-image: url(${item.background});`">
-        <div class="content">
-          <router-link :to="item.path">
-            {{item.title}}
-          </router-link>
-        </div>
-      </v-ons-card>
+      <router-link :to="item.path" v-for="(item, key) in menus" :key="item.path">
+        <v-ons-card :style="`background-image: url(${item.background});`">
+          <div class="content">
+            <span>{{item.title}}</span>              
+          </div>
+        </v-ons-card>
+      </router-link>
     </div>
   </v-ons-page>
 </template>

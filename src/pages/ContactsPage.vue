@@ -6,7 +6,7 @@
 
 <template>
   <v-ons-page>
-    <navbar></navbar>
+    <navbar enable-back></navbar>
     <v-ons-tabbar swipeable position="auto"
       :tabs.sync="tabs"
       :visible="true"

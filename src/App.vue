@@ -22,6 +22,23 @@ export default {
   components: {
     SidebarMenu,
   },
+  mounted() {
+    this.$ons.ready(() => {
+      // Set a new handler
+      this.$ons.setDefaultDeviceBackButtonListener(() => {
+        if (this.$router.currentRoute.path === '/') {
+          this.$ons.notification.confirm('Do you want to close the app?') // Ask for confirmation
+          .then((index) => {
+            if (index === 1) { // OK button
+              navigator.app.exitApp(); // Close the app
+            }
+          });
+        } else {
+          this.$router.back();
+        }
+      });
+    });
+  },
   computed: {
     menuIsOpen: {
       get() {

@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <navbar></navbar>
+    <navbar enable-back></navbar>
     <div class="main-content">
       <v-ons-button class="float-right" @click='openDialog'>Scan Devices</v-ons-button>
       <v-ons-list>
