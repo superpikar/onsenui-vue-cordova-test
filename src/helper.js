@@ -1,3 +1,5 @@
+import { format } from 'date-fns';
+
 export default {
   setSmsText(value) {
     return `Hello ${value}, see you tomorrow!`;
@@ -13,5 +15,12 @@ export default {
       return value[0].value;
     }
     return null;
+  },
+  formatDate(value, dateFormat) {
+    const newDate = new Date(value);
+    if (dateFormat) {
+      return format(newDate, dateFormat);
+    }
+    return format(newDate, 'D MMM YYYY');
   },
 };

@@ -1,4 +1,4 @@
-<style>
+<style scoped>
 .content.card__content {
   text-align: left;
   height: 75px;
@@ -20,7 +20,7 @@
   <v-ons-page>
     <navbar></navbar>
     <div class="main-content">
-      <router-link :to="item.path" v-for="(item, key) in menus" :key="item.path">
+      <router-link class="link-card" :to="item.path" v-for="(item, key) in menus" :key="item.path">
         <v-ons-card :style="`background-image: url(${item.background});`">
           <div class="content">
             <span>{{item.title}}</span>              

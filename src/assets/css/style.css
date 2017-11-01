@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Rozha+One');
 .main-content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .list-item--material.list-item--longdivider {
@@ -12,4 +13,12 @@ ons-toolbar.home-toolbar.toolbar.toolbar--material {
 
 .tabbar--material {
   background-color: #313131;
+}
+
+.card {
+  background-position: center;
+}
+
+.link-card {
+  text-decoration: none;
 }
