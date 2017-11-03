@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <navbar enable-back></navbar>
+    <navbar title="Bluetooth Test" enable-back></navbar>
     <div class="main-content">
       <v-ons-button class="float-right" @click='openDialog'>Scan Devices</v-ons-button>
       <v-ons-list>

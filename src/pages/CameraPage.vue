@@ -14,7 +14,7 @@
 
 <template>
   <v-ons-page>
-    <navbar enable-back></navbar>
+    <navbar title="Camera Test" enable-back></navbar>
     <div class="main-content">
       <v-ons-button modifier="cta" @click="takeFromCamera">
         <v-ons-icon icon="fa-camera"></v-ons-icon> Take photo

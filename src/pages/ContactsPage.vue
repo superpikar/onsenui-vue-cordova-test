@@ -6,7 +6,7 @@
 
 <template>
   <v-ons-page>
-    <navbar enable-back></navbar>
+    <navbar title="Contact Test" enable-back></navbar>
     <v-ons-tabbar swipeable position="auto"
       :tabs.sync="tabs"
       :visible="true"

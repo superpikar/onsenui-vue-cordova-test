@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import he from 'he';
 
 export default {
   setSmsText(value) {
@@ -22,5 +23,11 @@ export default {
       return format(newDate, dateFormat);
     }
     return format(newDate, 'D MMM YYYY');
+  },
+  htmlDecode(value) {
+    if (value) {
+      return he.decode(value);
+    }
+    return null;
   },
 };

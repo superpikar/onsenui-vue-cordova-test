@@ -7,39 +7,20 @@ ons-row,
 .card .left {
   flex-basis: 30%;
   background-position: center;
+  background-size: cover;
 }
 .card .right {
   flex-basis: 70%;
   padding: 10px;
-  background-position: center;
 }
-.card .right .title{
-  color: #313131;
-  font-size: 16px;
-  margin: 0;
-  font-family: 'Rozha One', serif;
-}
-.card .right .meta{
-  color: #313131;
-  font-size: 10px;
-  font-family: 'Fauna One', serif;
-}
-.card .right .author{
-  color: #8674af;
-  font-weight: bold;
-}
-.card .right .date{
-  color: #5e5e5e;
-}
-
 </style>
 
 <template>
   <v-ons-page>
-    <navbar enable-back></navbar>
-    <div class="main-content">
-      <router-link class="link-card" :to="`/post/${item.ID}`" v-for="(item, key) in posts" :key="item.ID">
-        <v-ons-card>
+    <navbar title="Posts" enable-back></navbar>
+    <div class="">
+      <router-link class="link-card" :to="`/posts/${item.slug}`" v-for="(item, key) in posts" :key="item.ID">
+        <v-ons-card class="post post-item">
           <v-ons-row>
             <v-ons-col class="left" :style="`background-image: url(${item.post_thumbnail_small});`"></v-ons-col>
             <v-ons-col class="right">

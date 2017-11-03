@@ -9,7 +9,10 @@
         <v-ons-icon icon="ion-navicon, material:md-menu"></v-ons-icon>
       </v-ons-toolbar-button>
     </div>
-    <div class="center">OnsenUI + Vue + Cordova</div>
+    <div class="center">{{title}}</div>
+    <div class="right">
+      <slot></slot>
+    </div>
   </v-ons-toolbar>
 </template>
 
@@ -19,6 +22,10 @@
       enableBack: {
         type: Boolean,
         default: false,
+      },
+      title: {
+        type: String,
+        default: 'OnsenUI + Vue + Cordova',
       },
     },
     methods: {
