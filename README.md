@@ -21,54 +21,47 @@ npm run build --report
 
 ## Cordova related command
 
+Install all cordova plugins and platform
+
 ``` bash
-cordova install
+cordova prepare
 ```
 
 To update the app that cordova is aware of, you need to build the Vue app with npm run build. This will clean and build the www folder.
 
 ``` bash
 # run and install in android
-cordova run android
+npm run cordova-run-android
 
-# build APK file 
-cordova build android
+# build APK debug file 
+npm run cordova-build
 ```
 
 ## Screenshots
 
-### Home Page
-
+Home Page <br/>
 <img src="screenshots/output/screenshot1.png" />
-
 <hr/>
 
-### Contact Page
-
+Contact Page <br/>
 <img src="screenshots/output/screenshot2.png" />
 <img src="screenshots/output/screenshot3.png" />
 <img src="screenshots/output/screenshot4.png" />
 <img src="screenshots/output/screenshot5.png" />
-
 <hr/>
 
-### Bluetooth Scan Page
-
+Bluetooth Scan Page <br/>
 <img src="screenshots/output/screenshot6.png" />
 <img src="screenshots/output/screenshot7.png" />
 <img src="screenshots/output/screenshot8.png" />
-
 <hr/>
 
-### Camera + Gallery Page
-
+Camera + Gallery Page <br/>
 <img src="screenshots/output/screenshot9.png" />
 <img src="screenshots/output/screenshot11.png" />
-
 <hr/>
 
-### Social Media Share
-
+Social Media Share <br/>
 <img src="screenshots/output/screenshot12.png" />
 <img src="screenshots/output/screenshot13.png" />
 <img src="screenshots/output/screenshot14.png" />
