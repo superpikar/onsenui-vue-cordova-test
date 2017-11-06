@@ -21,6 +21,10 @@ npm run build --report
 
 ## Cordova related command
 
+``` bash
+cordova install
+```
+
 To update the app that cordova is aware of, you need to build the Vue app with npm run build. This will clean and build the www folder.
 
 ``` bash
