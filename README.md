@@ -33,13 +33,43 @@ cordova build android
 
 ## Screenshots
 
-Home Page <br/>
+### Home Page
+
 <img src="screenshots/output/screenshot1.png" />
-<br/>
-Contact Page <br/>
+
+<hr/>
+
+### Contact Page
+
 <img src="screenshots/output/screenshot2.png" />
 <img src="screenshots/output/screenshot3.png" />
 <img src="screenshots/output/screenshot4.png" />
 <img src="screenshots/output/screenshot5.png" />
+
+<hr/>
+
+### Bluetooth Scan Page
+
+<img src="screenshots/output/screenshot6.png" />
+<img src="screenshots/output/screenshot7.png" />
+<img src="screenshots/output/screenshot8.png" />
+
+<hr/>
+
+### Camera + Gallery Page
+
+<img src="screenshots/output/screenshot9.png" />
+<img src="screenshots/output/screenshot11.png" />
+
+<hr/>
+
+### Social Media Share
+
+<img src="screenshots/output/screenshot12.png" />
+<img src="screenshots/output/screenshot13.png" />
+<img src="screenshots/output/screenshot14.png" />
+<img src="screenshots/output/screenshot16.png" />
+<img src="screenshots/output/screenshot17.png" />
+<img src="screenshots/output/screenshot18.png" />
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
