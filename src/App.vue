@@ -37,6 +37,25 @@ export default {
           this.$router.back();
         }
       });
+
+      /* eslint-disable no-undef */
+      if (typeof codePush === 'undefined') {
+        console.log('can\'t check app update on mobile web');
+      } else {
+        codePush.checkForUpdate((update) => {
+          if (!update) {
+            console.log('The app is up to date.');
+          } else {
+            console.log('An update is available! Should we download it?');
+            codePush.sync(null, {
+              installMode: InstallMode.IMMEDIATE,
+              updateDialog: {
+                title: 'An update is available!',
+              },
+            });
+          }
+        });
+      }
     });
   },
   computed: {
