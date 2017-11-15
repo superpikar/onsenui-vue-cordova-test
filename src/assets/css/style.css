@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Rozha+One');
+.main-content {
+  padding: 20px;
+}
+
+.list-item--material.list-item--longdivider {
+  border-bottom: 1px solid #eee;
+}
+
+ons-toolbar.home-toolbar.toolbar.toolbar--material {
+  background: #313131;
+}
+
+.bottom-bar {
+  background: #eaeaea;
+}
+
+.bottom-bar .toolbar-button {
+  color: #313131;
+}
+
+.tabbar--material {
+  background-color: #313131;
+}
+.tabbar--material__button {
+  color: white;
+}
+:checked + .tabbar--material__button {
+  color: #1e88e5;
+}
+
+.card {
+  background-position: center;
+}
+
+.link-card {
+  text-decoration: none;
+}
+
+.post .title {
+  color: #313131;
+  font-family: 'Rozha One', serif;
+}
+
+.post.post-single .title {
+  margin: 0 0 5px;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.post.post-item .title {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.post .meta,
+.post .content {
+  color: #313131;
+  font-family: 'Fauna One', serif;
+}
+
+.post.post-single .meta {
+  font-size: 14px;
+}
+
+.post.post-item .meta {
+  font-size: 10px;
+}
+
+.post .meta .author {
+  color: #8674af;
+  font-weight: bold;
+}
+
+.post .meta .date {
+  color: #5e5e5e;
+}
+
+.post-single .cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post .content {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.image-modal {
+  margin: 20px;
+  /* width: 100%;
+  display: inherit; */
+}
+
+.image-modal img {
+  width: 100%;
+}

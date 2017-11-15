@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src https://codepush.azurewebsites.net 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; connect-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; font-src * data: https://ssl.gstatic.com; media-src *; img-src *;" />
+    <title>onsenui-vue-cordova-test2</title>
+  </head>
+  <body>
+    <%= htmlWebpackPlugin.options.cordova || '' %>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
